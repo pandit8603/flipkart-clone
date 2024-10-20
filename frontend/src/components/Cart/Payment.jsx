@@ -143,6 +143,7 @@ const Payment = () => {
                                         <CardCvcElement />
                                     </div>
                                     <input
+                                        ref={paymentBtn}
                                         type="submit"
                                         value={`Pay ₹${totalPrice.toLocaleString()}`}
                                         disabled={payDisable ? true : false}
